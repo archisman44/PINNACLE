@@ -57,10 +57,10 @@
 
 ## 🖥️ Screenshots
 
-![Chat Demo](Image1.png)
-![OCR Demo](Image2.png)
-![Favorites](Image3.png)
-![History](Image4.png)
+![Chat Demo](assets/Image1.png)
+![OCR Demo](assets/Image2.png)
+![Favorites & History](assets/Image3.png  Image4.png)
+
 
 ---
 
