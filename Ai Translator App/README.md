@@ -65,14 +65,16 @@
 
 ## 🛠️ Installation & Running
 
-### 1. Clone the repository
+### **Method 1: Traditional (Recommended for Most Users)**
+
+#### 1. Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/ai-translator-chatbot.git
 cd ai-translator-chatbot
 ```
 
-### 2. Set up Python environment
+#### 2. Set up Python environment
 
 ```bash
 python3 -m venv venv
@@ -80,7 +82,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Install Tesseract OCR
+#### 3. Install Tesseract OCR
 
 - **Linux (Debian/Ubuntu):**  
   `sudo apt-get install tesseract-ocr`
@@ -89,7 +91,7 @@ pip install -r requirements.txt
 - **Windows:**  
   Download from [UB Mannheim builds](https://github.com/tesseract-ocr/tesseract/wiki) and update the path in `app.py` if needed.
 
-### 4. Set up LibreTranslate
+#### 4. Set up LibreTranslate
 
 - **Option 1:** Self-hosted (recommended):  
   Follow instructions at [LibreTranslate Deploy](https://github.com/LibreTranslate/LibreTranslate)
@@ -97,16 +99,99 @@ pip install -r requirements.txt
   Update `LIBRETRANSLATE_URL` in `app.py` to `https://libretranslate.de/translate`  
   (Note: Rate limits and privacy apply)
 
-### 5. Run the app
+#### 5. Run the app
 
 ```bash
 flask run
-# or if running directly
+# or
 python app.py
 ```
 
 - Open [http://localhost:5000](http://localhost:5000) in your browser.
 - Register a new user and start translating!
+
+---
+
+### **Method 2: Docker Setup (Alternative, Only If API Not Running)**
+
+> **⚠️ WARNING:**  
+> Use this Docker method **only if you cannot or do not wish to run LibreTranslate separately as an API**.  
+> Docker will run both the Flask app and a LibreTranslate container.  
+> **If you are using the public LibreTranslate API or a self-hosted API, you do NOT need Docker for this app.**
+
+#### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/ai-translator-chatbot.git
+cd ai-translator-chatbot
+```
+
+#### 2. Build and Run with Docker Compose
+
+Make sure you have [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed.
+
+- Ensure your `docker-compose.yml` looks similar to:
+
+    ```yaml
+    version: "3"
+    services:
+      app:
+        build: .
+        container_name: ai-translator-app
+        ports:
+          - "5000:5000"
+        volumes:
+          - ./instance:/app/instance
+          - ./uploads:/app/uploads
+        environment:
+          - FLASK_ENV=development
+          - LIBRETRANSLATE_URL=http://libretranslate:5001/translate
+        depends_on:
+          - libretranslate
+      libretranslate:
+        image: libretranslate/libretranslate:latest
+        container_name: libretranslate
+        ports:
+          - "5001:5001"
+        environment:
+          - LT_PORT=5001
+    ```
+
+- Build and run everything:
+
+    ```bash
+    docker compose up --build
+    ```
+    or
+    ```bash
+    docker-compose up --build
+    ```
+
+- The app will be available at [http://localhost:5000](http://localhost:5000)
+
+#### 3. (Optional) Dockerfile Example
+
+If needed, use the following `Dockerfile` for your Flask app:
+
+```dockerfile
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN apt-get update && \
+    apt-get install -y tesseract-ocr libglib2.0-0 libsm6 libxext6 libxrender-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+COPY . .
+
+EXPOSE 5000
+
+CMD ["python", "app.py"]
+```
 
 ---
 
@@ -158,6 +243,8 @@ ai-translator-chatbot/
 ├── app.py
 ├── models.py
 ├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
 ├── static/
 │   ├── style.css
 │   ├── main.js
