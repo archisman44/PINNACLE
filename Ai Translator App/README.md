@@ -1,6 +1,6 @@
 # AI Translator Chat Bot
 
-![AI Translator Chat Bot Banner](assets/banner.png)
+![AI Translator Chat Bot Banner](Image5.png)
 
 ## 🚀 Overview
 
