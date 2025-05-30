@@ -273,7 +273,7 @@ ai-translator-chatbot/
 
 ## 📧 Contact
 
-For support or questions, open an issue or contact [yourusername](mailto:your@email.com).
+For support or questions, open an issue or contact [archisman04](mailto:your@email.com).
 
 ---
 
