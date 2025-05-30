@@ -57,7 +57,7 @@
 
 ## 🖥️ Screenshots
 
-![Chat Demo](assets/demo-chat.png)
+![Chat Demo](Image1.png)
 ![OCR Demo](assets/demo-ocr.png)
 ![Favorites & History](assets/demo-favorites-history.png)
 
