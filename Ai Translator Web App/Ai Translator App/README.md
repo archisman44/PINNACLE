@@ -53,6 +53,17 @@
 - **OCR:** Tesseract OCR (via Pillow & pytesseract)
 - **TTS:** Google Text-to-Speech (gTTS)
 
+
+## 🗂 Languages Used
+
+- **HTML** – Templates and page structure (`.html`)
+- **JavaScript** – Client-side logic, event handling, TTS/recording (`.js`)
+- **Python** – Backend logic, routing, OCR, TTS, database (`.py`)
+- **CSS** – Styling and chat UI (`.css`)
+- **Dockerfile** – App containerization
+- **YAML** – Docker Compose configuration (`docker-compose.yml`)
+- **Bash / Shell** – Setup and command-line usage
+
 ---
 
 ## 🖥️ Screenshots
