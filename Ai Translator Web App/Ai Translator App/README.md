@@ -201,6 +201,8 @@ CMD ["python", "app.py"]
 
 ---
 **Main thing, if you use locally do docker container local setup docker runner code (ignore method 2)**
+
+
 `PS C:\Internship\Pinnacle\github\PINNACLE-main\Ai Translator App> [your own directory] `
 ..
 ` docker run -it --rm -p 5000:5000 -v libretranslate-data:/home/libretranslate/.local/share/argos-translate --user root libretranslate/libretranslate --debug --host 0.0.0.0 `
@@ -208,7 +210,7 @@ CMD ["python", "app.py"]
 **The --rm flag means the container will be removed automatically once it stops. To keep the container, run:**
 
 **
-`docker run -it --name libretranslate -p 5000:5000 -v libretranslate-data:/home/libretranslate/.local/share/argos-translate --user root libretranslate/libretranslate --debug --host 0.0.0.0`
+<pre>```bashdocker run -it --name libretranslate -p 5000:5000 -v libretranslate-data:/home/libretranslate/.local/share/argos-translate --user root libretranslate/libretranslate --debug --host 0.0.0.0``` </pre>
 
 **after completing downloaded all models play the docker container / docker start -ai libretranslate
 after this run only `python app.py`
@@ -216,47 +218,6 @@ done **
 
 
 CMD ["python", "app.py"]
-
-🔹 Running LibreTranslate Locally via Docker (Recommended for Local Use)
-If you are using the app locally and want to run the LibreTranslate container without setting up Docker Compose, use this approach (and ignore Method 2 in the instructions):
-
-powershell
-Copy
-Edit
-PS C:\Internship\Pinnacle\github\PINNACLE-main\Ai Translator App> 
-docker run -it --rm -p 5000:5000 -v libretranslate-data:/home/libretranslate/.local/share/argos-translate --user root libretranslate/libretranslate --debug --host 0.0.0.0
-✅ The --rm flag means the container will be removed automatically once it stops.
-
-🗂️ To Keep the Container Persistently
-Run this instead to preserve the container:
-
-bash
-Copy
-Edit
-docker run -it --name libretranslate -p 5000:5000 -v libretranslate-data:/home/libretranslate/.local/share/argos-translate --user root libretranslate/libretranslate --debug --host 0.0.0.0
-▶️ After All Models Are Downloaded:
-Once the models are fully downloaded by the container:
-
-bash
-Copy
-Edit
-docker start -ai libretranslate
-Then, in a new terminal, run your Flask app:
-
-bash
-Copy
-Edit
-python app.py
-🧠 Note
-Ensure your CMD in Dockerfile (if used) is:
-
-dockerfile
-Copy
-Edit
-CMD ["python", "app.py"]
-
-
-
 
 
 ## 📄 Usage Tips
