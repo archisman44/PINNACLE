@@ -199,6 +199,24 @@ CMD ["python", "app.py"]
 
 ---
 
+docker conatiner local setup
+docker runner code
+PS C:\Internship\Pinnacle\github\PINNACLE-main\Ai Translator App> 
+docker run -it --rm -p 5000:5000 -v libretranslate-data:/home/libretranslate/.local/share/argos-translate --user root libretranslate/libretranslate --debug --host 0.0.0.0
+
+
+The --rm flag means the container will be removed automatically once it stops. To keep the container, run:
+docker run -it --name libretranslate -p 5000:5000 -v libretranslate-data:/home/libretranslate/.local/share/argos-translate --user root libretranslate/libretranslate --debug --host 0.0.0.0
+
+docker start -ai libretranslate
+
+COPY . .
+
+EXPOSE 5000
+
+CMD ["python", "app.py"]
+
+
 ## 📄 Usage Tips
 
 - **Auto Detect Language:**  
