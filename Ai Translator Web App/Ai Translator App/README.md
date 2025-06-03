@@ -200,7 +200,7 @@ CMD ["python", "app.py"]
 ```
 
 ---
-**Main thing, if you use locally do docker container local setup docker runner code (ignore method 2)**
+**Main thing, if you use locally do docker container local setup docker runner code (fully ignore method 2 and do this carefully)**
 
 
 `PS C:\Internship\Pinnacle\github\PINNACLE-main\Ai Translator App> [your own directory] `
@@ -217,7 +217,7 @@ docker run -it --name libretranslate -p 5000:5000 -v libretranslate-data:/home/l
 ```
 
 **after completing downloaded all models play the docker container / docker start -ai libretranslate
-after this run only 
+after this run only**
 
 ```
 python app.py
