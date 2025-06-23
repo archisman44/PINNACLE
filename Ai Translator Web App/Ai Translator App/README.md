@@ -319,3 +319,52 @@ For support, suggestions, or questions, open an issue or contact [archisman04](m
 ---
 
 **Enjoy translating like never before! 🌐🗣️📸**
+
+
+**
+🌐 Extended Multi-Language Test Paragraph
+English:
+Today is a beautiful day to learn something new. I’m excited to explore different languages and understand how people around the world communicate.
+
+Spanish:
+Hoy es un día hermoso para aprender algo nuevo. Estoy emocionado de explorar diferentes idiomas y entender cómo se comunican las personas en todo el mundo.
+
+French:
+Aujourd'hui est une belle journée pour apprendre quelque chose de nouveau. Je suis ravi d'explorer différentes langues et de comprendre comment les gens communiquent à travers le monde.
+
+German:
+Heute ist ein schöner Tag, um etwas Neues zu lernen. Ich freue mich darauf, verschiedene Sprachen zu erkunden und zu verstehen, wie Menschen weltweit kommunizieren.
+
+Chinese (Simplified):
+今天是学习新知识的好日子。我很兴奋能探索不同的语言，了解世界各地的人们是如何交流的。
+
+Japanese:
+今日は新しいことを学ぶのに素晴らしい日です。世界中の人々がどのようにコミュニケーションをとっているのかを知るために、さまざまな言語を学ぶのが楽しみです。
+
+Hindi:
+आज कुछ नया सीखने का एक सुंदर दिन है। मैं विभिन्न भाषाओं का अन्वेषण करने और यह समझने के लिए उत्साहित हूं कि दुनिया भर के लोग कैसे संवाद करते हैं।
+
+Arabic:
+اليوم هو يوم جميل لتعلم شيء جديد. أنا متحمس لاستكشاف لغات مختلفة وفهم كيف يتواصل الناس حول العالم.
+
+Russian:
+Сегодня прекрасный день, чтобы узнать что-то новое. Я рад изучать разные языки и понимать, как люди общаются по всему миру.
+
+Portuguese:
+Hoje é um ótimo dia para aprender algo novo. Estou animado para explorar diferentes idiomas e entender como as pessoas se comunicam ao redor do mundo.
+
+Turkish:
+Bugün yeni bir şeyler öğrenmek için harika bir gün. Dünyadaki insanların nasıl iletişim kurduğunu anlamak için farklı dilleri keşfetmek beni heyecanlandırıyor.
+
+Bengali:
+আজ নতুন কিছু শেখার জন্য একটি সুন্দর দিন। আমি বিভিন্ন ভাষা অন্বেষণ করতে এবং বিশ্বের মানুষ কীভাবে যোগাযোগ করে তা বুঝতে আগ্রহী।
+
+Swahili:
+Leo ni siku nzuri ya kujifunza jambo jipya. Nina furaha kuchunguza lugha mbalimbali na kuelewa jinsi watu wanavyowasiliana duniani kote.
+
+Thai:
+วันนี้เป็นวันที่ดีสำหรับการเรียนรู้สิ่งใหม่ ๆ ฉันตื่นเต้นที่จะได้สำรวจภาษาต่าง ๆ และเข้าใจว่าผู้คนทั่วโลกสื่อสารกันอย่างไร
+
+Vietnamese:
+Hôm nay là một ngày tuyệt vời để học điều gì đó mới. Tôi rất hào hứng khám phá các ngôn ngữ khác nhau và hiểu cách mọi người trên thế giới giao tiếp.
+**
